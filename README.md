@@ -23,12 +23,12 @@ FFT Applications:
    
 2. Build the project: Use gcc to compile the source files. A C compiler is required.  
     ```bash
-    gcc "*.c" -o fft -lm
+    gcc "*.c" -o fft-c -lm
     ```
    
 3. Run the project:
     ```bash
-    fft [FFT1 | FFT2 | FFT_IMAGE] [algorithm | | input_file output_file]
+    fft-c [FFT1 | FFT2 | FFT_IMAGE] [algorithm | | input_file output_file]
     ```
     * **algorithm**: Choose from [RADIX_2 | ITER_RADIX_2 | DFT | BLUESTEIN].
     * **input_file**: Path of the image for calculating the Fourier magnitude spectrum.
@@ -36,12 +36,12 @@ FFT Applications:
     
 **All run cases:**
 ```bash
-fft FFT1 RADIX_2 # Run test case for radix-2
-fft FFT1 ITER_RADIX_2 # Run test case for iterative-radix-2
-fft FFT1 DFT # Run test case for DFT
-fft FFT1 BLUESTEIN # Run test case for Bluestein's algorithm
-fft FFT2 # Run test case for FFT2D
-fft FFT_IMAGE <input_file> <output_file> # calculate Fourier magnitude transform for given image
+fft-c FFT1 RADIX_2 # Run test case for radix-2
+fft-c FFT1 ITER_RADIX_2 # Run test case for iterative-radix-2
+fft-c FFT1 DFT # Run test case for DFT
+fft-c FFT1 BLUESTEIN # Run test case for Bluestein's algorithm
+fft-c FFT2 # Run test case for FFT2D
+fft-c FFT_IMAGE <input_file> <output_file> # calculate Fourier magnitude transform for given image
 ```
 If you want to modify the test cases, you can change the constants in the `main.c` file.
 
