@@ -107,7 +107,7 @@ struct Complex** to_2d_cplx_arr(const double *src, const int height, const int w
     return x;
 }
 
-// Taking the real component of the complex element only
+/* Taking the real component of the complex element only */
 double* to_double_arr(const struct Complex* src, const int N) {
     double* double_array = malloc(N * sizeof(double));
     if (double_array == NULL) {

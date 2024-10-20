@@ -8,20 +8,20 @@
 
 /* Change these to test different cases. */
 const double TEST_ARR[] = {1.0, 2.0, 1.0, -1.0, 1.5};
-const int TEST_ARR_SIZE = 5; // should match array length
+const int TEST_ARR_SIZE = 5; /* should match array length */
 
 const double TEST_ARR_ALT[] = {0, 1, 2, 3, 4};
-const int TEST_ARR_ALT_SIZE = 5; // should match array length
+const int TEST_ARR_ALT_SIZE = 5; /* should match array length */
 
 const double TEST_ARR_2P[] = {2.31, 5.4, 7.278, 0.76, 54.99, 6.81, 13.31, 9.67};
-const int TEST_ARR_2P_SIZE = 8; // should match array length, should be power of 2
+const int TEST_ARR_2P_SIZE = 8; /* should match array length, should be power of 2 */
 
 const double TEST_ARR_2P_ALT[] = {0, 1, 2, 3, 4, 5, 6, 7};
-const int TEST_ARR_2P_ALT_SIZE = 8; // should match array length, should be power of 2
+const int TEST_ARR_2P_ALT_SIZE = 8; /* should match array length, should be power of 2 */
 
 const double TEST_ARR_2D[] = {0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0};
-const int TEST_ARR_2D_HEIGHT = 4; // height * width should match array length
-const int TEST_ARR_2D_WIDTH = 4; // height * width should match array length
+const int TEST_ARR_2D_HEIGHT = 4; /* height * width should match array length */
+const int TEST_ARR_2D_WIDTH = 4; /* height * width should match array length */
 
 void usage() {
     printf("Usage:\n");
