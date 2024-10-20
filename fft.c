@@ -120,7 +120,6 @@ struct Complex * iter_ifft(const struct Complex* x, const int N) {
     return iter_fft_base(x, N, 1);
 }
 
-// https://en.wikipedia.org/wiki/Chirp_Z-transform#Bluestein.27s_algorithm
 struct Complex * bluestein_fft_base(const struct Complex* x, const int N, const int inverse) {
     const int M = next_power_of_two(2 * N - 1);
 
